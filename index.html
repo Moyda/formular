@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+    <head>
+	    <title>Prijava za posao</title>
+		<meta charset="utf-8"> 
+	</head>
+	<body>
+	    <form method="post" action="/register">
+		    <label for="input-ime">Ime:</label>
+			<input type="text" name="ime" id="input-ime" required><br>
+			
+			<label for="input-prezime">Prezime:</label>
+			<input type="text" name="ime" id="input-prezime" required><br>
+
+Vaš datum rođenja: <select name="dan rodjenja">
+<option value="1">1.</option>
+<option value="2">2.</option>
+<option value="3">3.</option>
+<option value="4">4.</option>
+<option value="5">5.</option>
+<option value="6">6.</option>
+<option value="7">7.</option>
+<option value="8">8.</option>
+<option value="9">9.</option>
+<option value="10">10.</option>
+<option value="11">11.</option>
+<option value="12">12.</option>
+<option value="13">13.</option>
+<option value="14">14.</option>
+<option value="15">15.</option>
+<option value="16">16.</option>
+<option value="17">17.</option>
+<option value="18">18.</option>
+<option value="19">19.</option>
+<option value="20">20.</option>
+<option value="21">21.</option>
+<option value="22">22.</option>
+<option value="23">23.</option>
+<option value="24">24.</option>
+<option value="25">25.</option>
+<option value="26">26.</option>
+<option value="27">27.</option>
+<option value="28">28.</option>
+<option value="29">29.</option>
+<option value="30">30.</option>
+<option value="31">31.</option>
+</select>
+
+<select name="mesec rodjenja">
+<option value="Januar">Januar</option>
+<option value="Februar">Februar</option>
+<option value="Mart">Mart</option>
+<option value="April">April</option>
+<option value="Maj">Maj</option>
+<option value="Jun">Jun</option>
+<option value="Jul">Jul</option>
+<option value="Avgust">Avgust</option>
+<option value="Septembar">Septembar</option>
+<option value="Oktobar">Oktobar</option>
+<option value="Novembar">Novembar</option>
+<option value="Decembar">Decembar</option>
+</select>
+
+<select name="godina rodjenja">
+<option value="">1970.</option>
+<option value="">1971.</option>
+<option value="">1972.</option>
+<option value="">1973.</option>
+<option value="">1974.</option>
+<option value="">1975.</option>
+<option value="">1976.</option>
+<option value="">1977.</option>
+<option value="">1978.</option>
+<option value="">1798.</option>
+<option value="">1980.</option>
+<option value="">1981.</option>
+<option value="">1982.</option>
+<option value="">1983.</option>
+<option value="">1984.</option>
+<option value="">1985.</option>
+<option value="">1986.</option>
+<option value="">1987.</option>
+<option value="">1988.</option>
+<option value="">1989.</option>
+<option value="">1990.</option>
+<option value="">1991.</option>
+<option value="">1992.</option>
+<option value="">1993.</option>
+<option value="">1994.</option>
+<option value="">1995.</option>
+<option value="">1996.</option>
+<option value="">1997.</option>
+<option value="">1998.</option>
+<option value="1999">1999.</option>
+<option value="2000">2000.</option>
+<option value="2001">2001.</option>
+<option value="2002">2002.</option>
+<option value="2003">2003.</option>
+<option value="2004">2004.</option>
+<option value="2005">2005.</option>
+<option value="2006">2006.</option>
+<option value="2007">2007.</option>
+<option value="2008">2008.</option>
+<option value="2009">2009.</option>
+<option value="2010">2010.</option>
+<option value="2011">2011.</option>
+<option value="2012">2012.</option>
+<option value="2013">2013.</option>
+<option value="2014">2014.</option>
+<option value="2015">2015.</option>
+<option value="2016">2016.</option>
+<option value="2017">2017.</option>
+<option value="2018">2018.</option>
+<option value="2019">2019.</option>
+<option value="2020">2020.</option>
+<option value="2021">2021.</option>
+</select><br>
+Vaš pol:</br>
+Muški<input type="radio" name="pol" value="Muski"> </br>
+Ženski<input type="radio" name="pol" value="Zenski"></br>
+
+			<label for="i-procenat">Procenat:</label>
+			<input type="number" name="procenat" id="i-procenat"
+			       step="0.01" min="0" max="1" value="0.5" required><br>
+				   
+			<label for="input-email">E-mail:</label>	   
+			<input type="email" name="email" id="input-email" required><br>
+			
+			<label for="i-tel">Telefon:</label>
+			<input type="tel" name="telefon" id="i-tel" required><br>
+			
+			<label for="i-zaposlen">Zaposlen?</label>
+			<input type="checkbox" name="zaposlen"
+			       id="i-zaposlen" value="1"><br>
+			
+			<label>Odaberite kategoriju vozacke  dozvole:</label><br>
+			<input type="radio" name="kategorija" value="1" checked> Kategorija A<br>			
+			<input type="radio" name="kategorija" value="2"> Kategorija B<br>			
+			<input type="radio" name="kategorija" value="3"> Kategorija C<br>		
+			<input type="radio" name="kategorija" value="4"> Kategorija D<br>		
+			<input type="radio" name="kategorija" value="5"> Kategorija E<br>
+			
+			<label>Odaberite strane jezike koje govorite:</label><br>
+			<input type="checkbox" name="jezik" value="1" checked>Engleski<br>			
+			<input type="checkbox" name="jezik" value="2">Nemacki<br>			
+			<input type="checkbox" name="jezik" value="3">Ruski<br>		
+			<input type="checkbox" name="jezik" value="4">Kineski<br>		
+			<input type="checkbox" name="jezik" value="5">Spanski<br>
+			
+			<label for="input-adresa">Adresa:</label><br>
+			<textarea rows="6" name="adresa"  required
+			          id="input-adresa"></textarea><br>
+
+			<label for="input-adresa">Ostalo:</label><br>
+			<textarea rows="6" name="ostalo"
+			          id="input-ostalo"></textarea><br>
+					  
+			<label for="i-drzava">Drzava</label>
+			<input type="text" name="drzava" required
+			       id="i-drzava" list="spisak-drzava">
+			<datalist id="spisak-drzava">
+			    <option value="Srbija">
+				<option value="Crna Gora">
+				<option value="Hrvatska">
+				<option value="Bosna i Hercegvina">
+				<option value="Makedonija">
+				<option value="Slovenija">
+			</datalist><br>
+			
+			<label for="i-drzava">Drzava 2</label>
+			<input type="text" name="drzava2" required
+			       id="i-drzava" list="spisak-drzava">
+			<datalist id="spisak-drzava">
+			    <option value="Srbija">
+				<option value="Crna Gora">
+				<option value="Hrvatska">
+				<option value="Bosna i Hercegvina">
+				<option value="Makedonija">
+				<option value="Slovenija">
+			</datalist><br>
+			
+			<label for="i-opseg">Opseg:</label>
+			<input type="range" name="opseg" id="i-opseg"
+			       min="10" max="60" step="5"><br><br>
+				   
+			<button type="submit">Posalji</button>
+			<button type="reset">Ponisti</button>
+		</form>
+	</body>
+</html>
